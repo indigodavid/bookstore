@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore
 
-> Description the project.
+> This project contains a React & Redux App that displays and removes books from a friendly interface.
 
 
 ## Built With
 
 - React
-- Frameworks
-- Technologies used
+- Redux
+- CSS
 
 ## Live Demo (if available)
 
@@ -18,24 +18,30 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- NPM updated
+- Git
+- Modern Web Browser
+  
 ### Setup
 
+    git clone https://github.com/indigodavid/bookstore.git
+    cd bookstore
 ### Install
 
+    npm install
 ### Usage
+
+    npm run build
+    npm start
 
 ### Run tests
 
+    npm test
 ### Deployment
-
 
 
 ## Authors
@@ -45,12 +51,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@indigodavid](https://github.com/indigodavid)
 - Twitter: [@indigo1987](https://twitter.com/indigo1987)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/david-vera-castillo-001b5756/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -64,9 +64,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Microverse
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- My supportive family 😊
 
 ## 📝 License
 
