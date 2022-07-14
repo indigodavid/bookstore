@@ -1,7 +1,12 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import bookReducer from './books/books';
 import categoryReducer from './categories/categories';
-import initialData from './initialData';
+import { asyncGetState } from './books/booksAsyncActions';
+
+const preloadedState = {
+  books: [],
+  categories: [],
+};
 
 const rootReducer = combineReducers({
   books: bookReducer,
@@ -10,7 +15,9 @@ const rootReducer = combineReducers({
 
 const store = configureStore({
   reducer: rootReducer,
-  preloadedState: initialData,
+  preloadedState,
 });
+
+store.dispatch(asyncGetState());
 
 export default store;
