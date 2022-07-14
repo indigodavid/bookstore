@@ -45,6 +45,46 @@ ul {
   list-style: none;
 }
 
+#add-book {
+  margin-top: 1.188em;
+  display: flex;
+  gap: 2.125em;
+}
+
+#add-book > * {
+  padding: 0.813em 1.063em;
+  font-family: var(--font-sans);
+}
+
+#add-book input {
+  border: 1px solid var(--color-border);
+  letter-spacing: -0.15px;
+}
+
+#add-book input::placeholder {
+  color: var(--color-placeholder);
+}
+
+#submit-book {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  width: 11.5em;
+  max-width: 100%;
+}
+
+#title-input {
+  flex-grow: 2;
+}
+
+#author-input {
+  flex-grow: 1;
+}
+
 .logo {
   color: var(--color-accent);
   font-size: 1.875rem;
@@ -179,4 +219,42 @@ ul {
   font-weight: 300;
   letter-spacing: 0.5px;
   margin-top: 1.438em;
+}
+
+.addBook {
+  width: 80%;
+  margin: 2.5em auto;
+  border-top: 1px solid var(--color-border);
+  padding: 1.813em 0;
+}
+
+.addBook h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #888;
+  letter-spacing: -0.18px;
+}
+
+.checkStatus {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  padding: 0.813em;
+  font-weight: bold;
+  width: 15em;
+  max-width: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100vw;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
 }
