@@ -1,6 +1,6 @@
-const ADD = 'bookstore/books/ADD';
-const UPDATE = 'bookstore/books/UPDATE';
-const REMOVE = 'bookstore/books/REMOVE';
+import {
+  ADD, UPDATE, REMOVE, GET,
+} from './actions';
 
 const addBook = (book) => ({
   type: ADD,
@@ -20,23 +20,30 @@ const removeBook = (book) => ({
 const bookReducer = (state = [], action = {}) => {
   switch (action.type) {
     case ADD:
+      if (state.find((elem) => elem.item_id === action.book.item_id)) {
+        return state;
+      }
       return [
         ...state,
         action.book,
       ];
     case UPDATE:
       return state.map((book) => {
-        if (book.id === action.book.id) {
+        if (book.item_id === action.book.item_id) {
           return action.book;
         }
         return book;
       });
     case REMOVE:
-      return state.filter((book) => book.id !== action.book.id);
+      return state.filter((book) => book.item_id !== action.book.item_id);
+    case `${GET}/fulfilled`:
+      return action.payload;
     default:
       return state;
   }
 };
 
-export { addBook, updateBook, removeBook };
+export {
+  addBook, updateBook, removeBook,
+};
 export default bookReducer;
