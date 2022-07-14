@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { ImUser } from 'react-icons/im';
 
 const Navbar = () => {
   const links = [
@@ -27,6 +28,9 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className="user">
+        <ImUser />
+      </div>
     </nav>
   );
 };

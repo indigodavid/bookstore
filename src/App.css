@@ -75,6 +75,17 @@ ul {
   opacity: 1;
 }
 
+.user {
+  color: var(--color-accent);
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  width: 2.813rem;
+  height: 2.813rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bookList {
   display: flex;
   flex-direction: column;
