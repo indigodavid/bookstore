@@ -21,7 +21,7 @@ const BookList = () => {
       {books.map((book) => (
         <li key={book.item_id}>
           <div className="bookWrapper">
-            <div className="genre">{book.category}</div>
+            <div className="category">{book.category}</div>
             <Book title={book.title} author={book.author} />
             <div className="bookActions">
               <button className="comments" type="button">Comments</button>

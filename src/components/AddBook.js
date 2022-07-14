@@ -34,8 +34,8 @@ const AddBook = () => {
   return (
     <div className="addBook">
       <form id="add-book" onSubmit={handleSubmit}>
-        <input name="title" id="title" type="text" placeholder="Book Title" />
-        <input name="author" id="author" type="text" placeholder="Author" />
+        <input name="title" id="title-input" type="text" placeholder="Book Title" />
+        <input name="author" id="author-input" type="text" placeholder="Author" />
         <button type="submit" id="submit-book">Add Book</button>
         <div id="alert" />
       </form>
