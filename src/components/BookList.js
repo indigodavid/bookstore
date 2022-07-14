@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
 import { asyncRemoveBook } from '../redux/books/booksAsyncActions';
+import Progress from './Progress';
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
@@ -18,7 +19,7 @@ const BookList = () => {
 
   return (
     <ul className="bookList">
-      {books.map((book) => (
+      {books.map((book, index) => (
         <li key={book.item_id}>
           <div className="bookWrapper">
             <div className="category">{book.category}</div>
@@ -29,7 +30,7 @@ const BookList = () => {
               <button className="edit" type="button">Edit</button>
             </div>
           </div>
-          <div className="progress">Progress Icon</div>
+          <Progress id={`progress-${index}`} />
           <div className="updateProgress">
             <div className="label">Current Chapter</div>
             <div className="chapter">Chapter 1</div>

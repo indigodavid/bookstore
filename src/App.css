@@ -267,6 +267,25 @@ ul {
   justify-content: center;
 }
 
+.circleWrap {
+  width: 4.25em;
+  height: 4.25em;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-border);
+}
+
+.circleWrap:before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 48em) {
   #add-book {
     flex-direction: column;
