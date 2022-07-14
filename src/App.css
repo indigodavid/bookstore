@@ -94,10 +94,17 @@ ul {
 .navbar {
   display: flex;
   align-items: center;
-  gap: 2.56em;
   padding: 1.81rem 10%;
   background-color: var(--color-white);
   border-bottom: solid 1px var(--color-border);
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.56em;
 }
 
 .navLinks {
@@ -182,6 +189,7 @@ ul {
   font-weight: 300;
   border-right: 1px solid var(--color-border);
   padding: 0 1.6em;
+  cursor: pointer;
 }
 
 .bookActions button:first-child {
@@ -257,4 +265,26 @@ ul {
   height: 75vh;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 48em) {
+  #add-book {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .bookList li {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .navWrapper {
+    flex-direction: column;
+  }
 }

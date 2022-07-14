@@ -18,16 +18,18 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <Link to="/">Bookstore CMS</Link>
+      <div className="navWrapper">
+        <div className="logo">
+          <Link to="/">Bookstore CMS</Link>
+        </div>
+        <ul className="navLinks">
+          {links.map((link) => (
+            <li key={link.id}>
+              <NavLink to={link.path}>{link.text}</NavLink>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className="navLinks">
-        {links.map((link) => (
-          <li key={link.id}>
-            <NavLink to={link.path}>{link.text}</NavLink>
-          </li>
-        ))}
-      </ul>
       <div className="user">
         <ImUser />
       </div>
