@@ -151,3 +151,32 @@ ul {
 .bookActions button:last-child {
   border-right: none;
 }
+
+.updateProgress {
+  font-family: var(--font-serif);
+}
+
+.label {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.chapter {
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  margin-top: 0.438em;
+}
+
+.updateProgress button {
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: 3px;
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 1.438em;
+}

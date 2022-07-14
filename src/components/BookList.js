@@ -31,8 +31,8 @@ const BookList = () => {
           </div>
           <div className="progress">Progress Icon</div>
           <div className="updateProgress">
-            <div>Current Chapter</div>
-            <div>Chapter 1</div>
+            <div className="label">Current Chapter</div>
+            <div className="chapter">Chapter 1</div>
             <button type="button">Update Progress</button>
           </div>
         </li>
