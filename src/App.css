@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*:root {
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Roboto Slab', serif;
+  --color-white: #fff;
+  --color-bg: #fafafa;
+  --color-accent: #0290ff;
+  --color-title: #121212;
+  --color-sub: #4386bf;
+  --color-placeholder: #c4c4c4;
+  --color-border: #e8e8e8;
+}
+
 *,
 *::after,
 *::before {
@@ -6,22 +20,59 @@
   padding: 0;
 }
 
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  appearance: none;
+  border: none;
+}
+
 body {
   font-size: 1rem;
+  background-color: var(--color-bg);
+  font-family: var(--font-sans);
+  color: var(--color-title);
 }
 
 ul {
   list-style: none;
 }
 
+.logo {
+  color: var(--color-accent);
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
 .navbar {
   display: flex;
-  gap: 1em;
+  align-items: center;
+  gap: 2.56em;
+  padding: 1.81rem 10%;
+  background-color: var(--color-white);
+  border-bottom: solid 1px var(--color-border);
 }
 
 .navLinks {
   display: flex;
-  gap: 1em;
+  gap: 2.56em;
+}
+
+.navLinks a {
+  font-size: 0.813rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.navLinks a.active {
+  opacity: 1;
 }
 
 .bookList {
