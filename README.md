@@ -50,7 +50,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@indigodavid](https://github.com/indigodavid)
 - Twitter: [@indigo1987](https://twitter.com/indigo1987)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/david-vera-castillo-001b5756/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/davidveracastillo/)
 
 ## 🤝 Contributing
 
