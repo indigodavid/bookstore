@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *,
 *::after,
 *::before {
@@ -6,22 +8,130 @@
   padding: 0;
 }
 
+*:root {
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Roboto Slab', serif;
+  --color-white: #fff;
+  --color-bg: #fafafa;
+  --color-accent: #0290ff;
+  --color-title: #121212;
+  --color-sub: #4386bf;
+  --color-placeholder: #c4c4c4;
+  --color-border: #e8e8e8;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  appearance: none;
+  border: none;
+}
+
 body {
   font-size: 1rem;
+  background-color: var(--color-bg);
+  font-family: var(--font-sans);
+  color: var(--color-title);
 }
 
 ul {
   list-style: none;
 }
 
+#add-book {
+  margin-top: 1.188em;
+  display: flex;
+  gap: 2.125em;
+}
+
+#add-book > * {
+  padding: 0.813em 1.063em;
+  font-family: var(--font-sans);
+}
+
+#add-book input {
+  border: 1px solid var(--color-border);
+  letter-spacing: -0.15px;
+}
+
+#add-book input::placeholder {
+  color: var(--color-placeholder);
+}
+
+#submit-book {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  width: 11.5em;
+  max-width: 100%;
+}
+
+#title-input {
+  flex-grow: 2;
+}
+
+#author-input {
+  flex-grow: 1;
+}
+
+.logo {
+  color: var(--color-accent);
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
 .navbar {
   display: flex;
-  gap: 1em;
+  align-items: center;
+  padding: 1.81rem 10%;
+  background-color: var(--color-white);
+  border-bottom: solid 1px var(--color-border);
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.56em;
 }
 
 .navLinks {
   display: flex;
-  gap: 1em;
+  gap: 2.56em;
+}
+
+.navLinks a {
+  font-size: 0.813rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.navLinks a.active {
+  opacity: 1;
+}
+
+.user {
+  color: var(--color-accent);
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  width: 2.813rem;
+  height: 2.813rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bookList {
@@ -35,8 +145,165 @@ ul {
 .bookList li {
   display: flex;
   justify-content: space-between;
+  padding: 1.625em;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  align-items: center;
 }
 
 .bookWrapper {
   flex-basis: 50%;
+  font-family: var(--font-serif);
+}
+
+.category {
+  font-family: var(--font-sans);
+  opacity: 0.5;
+  font-weight: bold;
+  margin: 0.25em 0;
+  font-size: 0.875rem;
+}
+
+.book .title {
+  font-weight: bold;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+}
+
+.book .author {
+  font-size: 0.875rem;
+  color: var(--color-sub);
+  font-weight: 300;
+  margin: 0.25em 0 0;
+}
+
+.updateProgress button {
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: 3px;
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 1.438em;
+}
+
+.bookActions {
+  display: flex;
+  margin-top: 1.313em;
+}
+
+.bookActions button {
+  background-color: transparent;
+  font-family: var(--font-serif);
+  color: var(--color-sub);
+  font-weight: 300;
+  border-right: 1px solid var(--color-border);
+  padding: 0 1.6em;
+  cursor: pointer;
+}
+
+.bookActions button:first-child {
+  padding-left: 0;
+}
+
+.bookActions button:last-child {
+  border-right: none;
+}
+
+.updateProgress {
+  font-family: var(--font-serif);
+}
+
+.label {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.chapter {
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  margin-top: 0.438em;
+}
+
+.addBook {
+  width: 80%;
+  margin: 2.5em auto;
+  border-top: 1px solid var(--color-border);
+  padding: 1.813em 0;
+}
+
+.addBook h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #888;
+  letter-spacing: -0.18px;
+}
+
+.checkStatus {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  padding: 0.813em;
+  font-weight: bold;
+  width: 15em;
+  max-width: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100vw;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleWrap {
+  width: 4.25em;
+  height: 4.25em;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-border);
+}
+
+.circleWrap::before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 48em) {
+  #add-book {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .bookList li {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .navWrapper {
+    flex-direction: column;
+  }
 }

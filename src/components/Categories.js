@@ -8,11 +8,11 @@ const Categories = () => {
   const handleCheck = () => {
     dispatch(checkStatus());
   };
-  const button = <button type="button" onClick={handleCheck}>Check status</button>;
+  const button = <button className="checkStatus" type="button" onClick={handleCheck}>Check status</button>;
   return (
-    <div>
+    <div className="categories">
       {button}
-      <div>{categories}</div>
+      <h2>{categories}</h2>
     </div>
   );
 };

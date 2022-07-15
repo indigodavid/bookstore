@@ -37,12 +37,12 @@ To get a local copy up and running follow these simple example steps.
 
     npm run build
     npm start
-
 ### Run tests
 
     npm test
 ### Deployment
 
+- Netlify: (https://dvc-bookstore.netlify.app/)
 
 ## Authors
 
